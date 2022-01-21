@@ -40,15 +40,15 @@ export default function Sertified() {
         <p className="text-slate-800 text-lg font-semibold">
           Satisfied Clients i have worked with :
         </p>
-        <div className="snap-x flex snap-mandatory max-h-32 w-full overflow-x-scroll scrollbar space-x-2 p-4">
+        <div className="snap-x md:snap-none flex snap-mandatory max-h-32 w-full overflow-x-scroll md:overflow-auto scrollbar space-x-2 py-4">
           {client.map((data, index) => {
             return (
               <div
                 key={index}
-                className={`flex justify-center snap-center w-1/2 lg:w-1/3 flex-shrink-0 p-4 shadow rounded`}
+                className={`flex justify-center snap-center w-1/2 md:w-1/6 flex-shrink-0 md:flex-shrink p-4`}
               >
                 <img
-                  className="h-full w-auto"
+                  className="h-full w-auto object-contain"
                   src={data.src}
                   alt={data.title}
                   title={data.title}
