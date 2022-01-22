@@ -35,20 +35,20 @@ export default function Sertified() {
   ];
 
   return (
-    <div className="relative bg-slate-50 w-full">
-      <div className="container mx-auto px-6 py-12">
-        <p className="text-slate-800 text-lg font-semibold">
+    <div className="relative w-full bg-slate-50">
+      <div className="container px-6 py-12 mx-auto">
+        <p className="text-lg font-semibold text-slate-800">
           Satisfied Clients i have worked with :
         </p>
-        <div className="snap-x md:snap-none flex snap-mandatory max-h-32 w-full overflow-x-scroll md:overflow-auto scrollbar space-x-2 py-4">
+        <div className="flex w-full py-4 space-x-2 overflow-x-scroll snap-x md:snap-none snap-mandatory max-h-32 md:overflow-auto scrollbar">
           {client.map((data, index) => {
             return (
               <div
                 key={index}
-                className={`flex justify-center snap-center w-1/2 md:w-1/6 flex-shrink-0 md:flex-shrink p-4`}
+                className={`flex justify-center snap-center snap-always w-1/2 md:w-1/6 flex-shrink-0 md:flex-shrink p-4`}
               >
                 <img
-                  className="h-full w-auto object-contain"
+                  className="object-contain w-auto h-full"
                   src={data.src}
                   alt={data.title}
                   title={data.title}

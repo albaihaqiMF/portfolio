@@ -1,5 +1,6 @@
 import React from "react";
 import Sertified from "../Components/Sertified";
+import Works from "../Components/Works";
 import Navbar from "./../Components/Navbar";
 
 export default function Welcome() {
@@ -7,8 +8,8 @@ export default function Welcome() {
     <div className="antialiased">
       <Navbar />
       <div className="h-[75vh] md:h-[85vh] flex flex-col justify-center bg-gradient-to-br from-indigo-400 to-theme-4 transition-all duration-300 relative">
-        <div className="container mx-auto p-6 relative z-30">
-          <p className="text-md md:text-lg font-semibold text-indigo-900 mb-6">
+        <div className="container relative z-30 p-6 mx-auto">
+          <p className="mb-6 font-semibold text-indigo-900 text-md md:text-lg">
             Muhammad Fahmi Albaihaqi, <span>Web Developer</span>
           </p>
           <p className="text-xl lg:text-2xl xl:text-3xl font-semibold w-full md:w-[480px] bg-gradient-to-br from-indigo-50 to-pink-50 bg-clip-text text-transparent mb-14">
@@ -16,14 +17,14 @@ export default function Welcome() {
           </p>
           <div className="flex space-x-4">
             <button
-              className="py-2 px-3 md:px-5 border-2 text-xs md:text-base hover:border-indigo-500 rounded-md text-white hover:bg-gradient-to-br hover:from-indigo-50 hover:to-cyan-50 hover:text-indigo-500 font-semibold shadow hover:shadow-lg transition-all duration-300 flex items-center"
+              className="flex items-center px-3 py-2 text-xs font-semibold text-white transition-all duration-300 border-2 rounded-md shadow md:px-5 md:text-base hover:border-indigo-500 hover:bg-gradient-to-br hover:from-indigo-50 hover:to-cyan-50 hover:text-indigo-500 hover:shadow-lg"
               title="Download CV"
             >
               Download CV{" "}
               <span className="ml-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -37,13 +38,13 @@ export default function Welcome() {
             </button>
             <a
               href="https://wa.me/6281273453552"
-              className="py-2 px-3 md:px-5 border-2 border-emerald-500 bg-emerald-500 text-xs md:text-base rounded-md text-white hover:bg-emerald-50 hover:text-emerald-500 hover:border-2 font-semibold shadow hover:shadow-lg transition-all duration-300 flex items-center"
+              className="flex items-center px-3 py-2 text-xs font-semibold text-white transition-all duration-300 border-2 rounded-md shadow md:px-5 border-emerald-500 bg-emerald-500 md:text-base hover:bg-emerald-50 hover:text-emerald-500 hover:border-2 hover:shadow-lg"
             >
               WhatsApp{" "}
               <span className="ml-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -56,7 +57,7 @@ export default function Welcome() {
         </div>
         <div className="absolute bottom-32 right-12 md:right-16 transform -rotate-[27deg] z-0">
           <svg
-            className="h-56 w-56 md:w-60 md:h-60 xl:w-72 xl:h-72"
+            className="w-56 h-56 md:w-60 md:h-60 xl:w-72 xl:h-72"
             viewBox="0 0 238 252"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -105,6 +106,7 @@ export default function Welcome() {
         </svg>
       </div>
       <Sertified />
+      <Works />
     </div>
   );
 }
