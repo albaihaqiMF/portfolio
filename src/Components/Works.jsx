@@ -36,16 +36,6 @@ export default function Works() {
     },
   ];
 
-  let number = () =>
-    window.addEventListener("resize", function () {
-      if (window.innerWidth < 765) {
-        console.log(window.innerWidth);
-        return 1;
-      } else {
-        return 3;
-      }
-    });
-
   const settings = {
     dots: true,
     centerMode: true,
