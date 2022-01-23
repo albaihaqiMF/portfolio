@@ -54,7 +54,7 @@ export default function Works() {
           {client.map((data, id) => {
             return (
               <div key={id}>
-                <div className={`max-h-[40px] md:max-h-40 overflow-hidden mx-1 md:mx-4 rounded-md`}>
+                <div className={`max-h-[50px] md:max-h-60 overflow-hidden mx-1 md:mx-4 rounded-md`}>
                   <img
                     className="object-cover object-top"
                     src={data.src}
