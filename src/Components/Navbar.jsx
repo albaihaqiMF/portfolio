@@ -28,7 +28,7 @@ export default function Navbar() {
         >
           Portfo<span className="text-cyan-200">lio. </span>
         </a>
-        <div id="menu" className="space-x-2 hidden sm:flex">
+        <div id="menu" className="space-x-2 hidden">
           <a
             href="/"
             className="text-white px-4 py-2 hover:bg-indigo-100 hover:text-indigo-500 rounded-full"
