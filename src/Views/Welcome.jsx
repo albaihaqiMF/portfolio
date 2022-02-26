@@ -17,7 +17,7 @@ export default function Welcome() {
           </p>
           <div className="flex space-x-4">
             <a href="https://www.linkedin.com/in/fhmalba/"
-            target="_blank"
+            // target="_blank"
               className="flex items-center px-3 py-2 text-xs font-semibold text-white transition-all duration-300 border-2 rounded-md shadow md:px-5 md:text-base hover:border-indigo-500 hover:bg-gradient-to-br hover:from-indigo-50 hover:to-cyan-50 hover:text-indigo-500 hover:shadow-lg"
               title="LinkedIn"
             >
